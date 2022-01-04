@@ -1,0 +1,39 @@
+{
+  "props": [
+    {
+      "name": "Brand",
+      "type": "color",
+      "value": "rgba(11,166,245,0.77)",
+      "category": "color",
+      "meta": {
+        "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+        "id": "hItL3BfqmjF"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken",
+      "type": "color",
+      "value": "#000000",
+      "category": "color",
+      "meta": {
+        "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+        "id": "4ZQMpXDrA"
+      }
+    },
+    {
+      "name": "VeryPeri",
+      "type": "color",
+      "value": "#6667AB",
+      "category": "color",
+      "meta": {
+        "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+        "id": "7QHrZkMzK"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}

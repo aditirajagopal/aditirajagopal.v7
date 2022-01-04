@@ -1,0 +1,288 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+      "projectApiToken": "u0qTAZBYK54nEAaL0II6S0gwlBe3flffpg1mxXIZLEZrH59EgpTBySKzkubwljF2yIkMydpTxJp3F04j5H1g",
+      "projectName": "Aditi Rajagopal personal website 2022",
+      "version": "latest",
+      "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/plasmic_aditi_rajagopal_personal_website_2022.module.css",
+      "components": [
+        {
+          "id": "sqhz7hEEIvK",
+          "name": "Home",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicHome.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicHome.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "sGqSkRLs-FT",
+          "name": "CopyableLink",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicCopyableLink.tsx",
+          "importSpec": {
+            "modulePath": "CopyableLink.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicCopyableLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "KtXDTZcD4n6",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "jvp3Zw0Hsia",
+          "name": "Select",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicSelect.tsx",
+          "importSpec": {
+            "modulePath": "Select.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicSelect.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select"
+        },
+        {
+          "id": "pdoSEuWNFhp",
+          "name": "Select__Option",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicSelect__Option.tsx",
+          "importSpec": {
+            "modulePath": "Select__Option.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicSelect__Option.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option"
+        },
+        {
+          "id": "QM42q9zfuJB",
+          "name": "Select__OptionGroup",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicSelect__OptionGroup.tsx",
+          "importSpec": {
+            "modulePath": "Select__OptionGroup.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicSelect__OptionGroup.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option-group"
+        },
+        {
+          "id": "IkGGlxh-EgI",
+          "name": "Select__Overlay",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicSelect__Overlay.tsx",
+          "importSpec": {
+            "modulePath": "Select__Overlay.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicSelect__Overlay.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "triggered-overlay"
+        },
+        {
+          "id": "i70_KLpb3HC",
+          "name": "Pto",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicPto.tsx",
+          "importSpec": {
+            "modulePath": "../pages/pto.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicPto.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "xxP53eK__w",
+          "name": "Portfolio",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicPortfolio.tsx",
+          "importSpec": {
+            "modulePath": "../pages/portfolio.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicPortfolio.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "3tKTxNK9Sn",
+          "name": "Thoughts",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicThoughts.tsx",
+          "importSpec": {
+            "modulePath": "../pages/thoughts.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicThoughts.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "Zmr6lqTMMC",
+          "name": "SocialFooter",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicSocialFooter.tsx",
+          "importSpec": {
+            "modulePath": "SocialFooter.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicSocialFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ehCSLGzmt76",
+          "name": "Header",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicHeader.tsx",
+          "importSpec": {
+            "modulePath": "Header.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ZkkRVfwjtM",
+          "name": "LearningPlan",
+          "type": "managed",
+          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicLearningPlan.tsx",
+          "importSpec": {
+            "modulePath": "../pages/learningplan.tsx"
+          },
+          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicLearningPlan.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        }
+      ],
+      "icons": [
+        {
+          "id": "6QKGOL4vfqC",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "XKjDBPHXY5q",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "d5HvBdqQqLg",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "RKYv7Ypni3q",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "UFOK1ZBUwLm",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/icons/PlasmicIcon__Icon4.tsx"
+        },
+        {
+          "id": "mpelM3JMWds",
+          "name": "ChevronDownsvgIcon",
+          "moduleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/icons/PlasmicIcon__ChevronDownsvg.tsx"
+        },
+        {
+          "id": "FXvm33IeKIg",
+          "name": "ChevronUpsvgIcon",
+          "moduleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/icons/PlasmicIcon__ChevronUpsvg.tsx"
+        },
+        {
+          "id": "iRe7-X0B_BS",
+          "name": "Icon8Icon",
+          "moduleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/icons/PlasmicIcon__Icon8.tsx"
+        },
+        {
+          "id": "6w4-agHxOVW",
+          "name": "Icon5Icon",
+          "moduleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/icons/PlasmicIcon__Icon5.tsx"
+        },
+        {
+          "id": "31YSnHA68U5",
+          "name": "Icon6Icon",
+          "moduleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/icons/PlasmicIcon__Icon6.tsx"
+        },
+        {
+          "id": "Uczzl8hjTGd",
+          "name": "Icon28Icon",
+          "moduleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/icons/PlasmicIcon__Icon28.tsx"
+        },
+        {
+          "id": "-C9IAuGp-bN",
+          "name": "Icon7Icon",
+          "moduleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/icons/PlasmicIcon__Icon7.tsx"
+        }
+      ],
+      "images": [],
+      "indirect": false,
+      "codeComponents": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "C8HlPs3Ggff",
+        "name": "Screen",
+        "projectId": "hRsY5NbPeCQT1m4ubZULqa",
+        "contextFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.166",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.166/dist/plasmic.schema.json"
+}
