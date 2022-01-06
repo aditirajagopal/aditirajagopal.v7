@@ -1,0 +1,74 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  position: relative;
+  min-width: 0;
+}
+.freeBox___3DiJf {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  align-self: flex-start;
+  min-width: 0;
+}
+.freeBox___347Og {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+.freeBox___347Og > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: calc(0px - 16px);
+  width: calc(100% + 16px);
+}
+.freeBox___347Og > :global(.__wab_flex-container) > *,
+.freeBox___347Og > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox___347Og > :global(.__wab_flex-container) > picture > img,
+.freeBox___347Og
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 16px;
+}
+.svg__gDrqk {
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  color: #6667ab /* plasmic-token: yfK6asVaq */;
+  flex-shrink: 0;
+}
+.svg__si3Qz {
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  color: #6667ab /* plasmic-token: yfK6asVaq */;
+  flex-shrink: 0;
+}
+.svg__yACh {
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  color: #6667ab /* plasmic-token: yfK6asVaq */;
+  flex-shrink: 0;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  color: #6667ab66 /* plasmic-token: p0U_7CzqZ */;
+  font-family: "IBM Plex Sans", sans-serif;
+  min-width: 0;
+}

@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  position: relative;
+  min-width: 0;
+}
+.link {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.slotTargetTitle {
+  font-family: "Eczar", serif;
+  font-size: 32px /* plasmic-token: z6thUbBJR4R */;
+  font-weight: 800;
+  color: #ffffff /* plasmic-token: 5-k7GM_Yx */;
+}

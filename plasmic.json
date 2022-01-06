@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -267,6 +267,152 @@
       ],
       "images": [],
       "indirect": false,
+      "codeComponents": [],
+      "jsBundleThemes": []
+    },
+    {
+      "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+      "projectApiToken": "Vo34wuGS4sZpEjV0bu5MQK7Z3qlrnmNy9rICNaz6cfdZMIhDlHK4KfmZflUY0AZJHiAa5dEZXlQddkK1cog",
+      "projectName": "aditirajagopal.v7",
+      "version": "latest",
+      "cssFilePath": "plasmic/aditirajagopal_v_7/plasmic_aditirajagopal_v_7.module.css",
+      "components": [
+        {
+          "id": "KBBASCMD9IY",
+          "name": "Thoughts",
+          "type": "managed",
+          "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+          "renderModuleFilePath": "plasmic/aditirajagopal_v_7/PlasmicThoughts.tsx",
+          "importSpec": {
+            "modulePath": "../pages/thoughts.tsx"
+          },
+          "cssFilePath": "plasmic/aditirajagopal_v_7/PlasmicThoughts.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "h-KwpRnKbCa",
+          "name": "HomeHeader",
+          "type": "managed",
+          "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+          "renderModuleFilePath": "plasmic/aditirajagopal_v_7/PlasmicHomeHeader.tsx",
+          "importSpec": {
+            "modulePath": "HomeHeader.tsx"
+          },
+          "cssFilePath": "plasmic/aditirajagopal_v_7/PlasmicHomeHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "eSivtCiIyYp",
+          "name": "ListItem",
+          "type": "managed",
+          "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+          "renderModuleFilePath": "plasmic/aditirajagopal_v_7/PlasmicListItem.tsx",
+          "importSpec": {
+            "modulePath": "ListItem.tsx"
+          },
+          "cssFilePath": "plasmic/aditirajagopal_v_7/PlasmicListItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "FoIacMt2OHV",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+          "renderModuleFilePath": "plasmic/aditirajagopal_v_7/PlasmicFooter.tsx",
+          "importSpec": {
+            "modulePath": "Footer.tsx"
+          },
+          "cssFilePath": "plasmic/aditirajagopal_v_7/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "5GtUtT6LtET",
+          "name": "Post",
+          "type": "managed",
+          "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+          "renderModuleFilePath": "plasmic/aditirajagopal_v_7/PlasmicPost.tsx",
+          "importSpec": {
+            "modulePath": "../pages/post.tsx"
+          },
+          "cssFilePath": "plasmic/aditirajagopal_v_7/PlasmicPost.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "HVzZVFvQDMt",
+          "name": "PostHeader",
+          "type": "managed",
+          "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+          "renderModuleFilePath": "plasmic/aditirajagopal_v_7/PlasmicPostHeader.tsx",
+          "importSpec": {
+            "modulePath": "PostHeader.tsx"
+          },
+          "cssFilePath": "plasmic/aditirajagopal_v_7/PlasmicPostHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "RVqnht4VpY",
+          "name": "Home",
+          "type": "managed",
+          "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+          "renderModuleFilePath": "plasmic/aditirajagopal_v_7/PlasmicHome.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/aditirajagopal_v_7/PlasmicHome.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        }
+      ],
+      "icons": [
+        {
+          "id": "aRe7IwEaynW",
+          "name": "PlasmicLogoIcon",
+          "moduleFilePath": "plasmic/aditirajagopal_v_7/icons/PlasmicIcon__PlasmicLogo.tsx"
+        },
+        {
+          "id": "oTcWF1NCNrb",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/aditirajagopal_v_7/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "uTwMNruxcak",
+          "name": "Icon17Icon",
+          "moduleFilePath": "plasmic/aditirajagopal_v_7/icons/PlasmicIcon__Icon17.tsx"
+        },
+        {
+          "id": "mYupy8N61gP",
+          "name": "Icon16Icon",
+          "moduleFilePath": "plasmic/aditirajagopal_v_7/icons/PlasmicIcon__Icon16.tsx"
+        },
+        {
+          "id": "9ln7UQtuabq",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/aditirajagopal_v_7/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "5SKpbgno6I6",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/aditirajagopal_v_7/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "4QJoZN4Ndzf",
+          "name": "Icon28Icon",
+          "moduleFilePath": "plasmic/aditirajagopal_v_7/icons/PlasmicIcon__Icon28.tsx"
+        },
+        {
+          "id": "ochq-jyWrNJX",
+          "name": "Icon14Icon",
+          "moduleFilePath": "plasmic/aditirajagopal_v_7/icons/PlasmicIcon__Icon14.tsx"
+        }
+      ],
+      "images": [],
+      "indirect": false,
       "codeComponents": []
     }
   ],
@@ -277,6 +423,12 @@
         "name": "Screen",
         "projectId": "hRsY5NbPeCQT1m4ubZULqa",
         "contextFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicGlobalVariant__Screen.tsx"
+      },
+      {
+        "id": "TwMp01pTCp0",
+        "name": "Screen",
+        "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+        "contextFilePath": "plasmic/aditirajagopal_v_7/PlasmicGlobalVariant__Screen.tsx"
       }
     ]
   },

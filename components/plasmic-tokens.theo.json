@@ -11,6 +11,66 @@
       }
     },
     {
+      "name": "FaintPeri",
+      "type": "color",
+      "value": "#6667AB66",
+      "category": "color",
+      "meta": {
+        "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+        "id": "p0U_7CzqZ"
+      }
+    },
+    {
+      "name": "GradientBg",
+      "type": "color",
+      "value": "#AE609E",
+      "category": "color",
+      "meta": {
+        "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+        "id": "cTL-6IDES"
+      }
+    },
+    {
+      "name": "Heading",
+      "type": "fontsize",
+      "value": "32px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+        "id": "z6thUbBJR4R"
+      }
+    },
+    {
+      "name": "Link",
+      "type": "color",
+      "value": "rgb(0,122,204)",
+      "category": "color",
+      "meta": {
+        "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+        "id": "Z9V5NMkCxXP"
+      }
+    },
+    {
+      "name": "Subheading",
+      "type": "fontsize",
+      "value": "24px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+        "id": "2irGQlZMXSZ"
+      }
+    },
+    {
+      "name": "Subtext",
+      "type": "fontsize",
+      "value": "12px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+        "id": "vm7bpLAKxwh"
+      }
+    },
+    {
       "name": "UnnamedStyleToken",
       "type": "color",
       "value": "#000000",
@@ -28,6 +88,46 @@
       "meta": {
         "projectId": "hRsY5NbPeCQT1m4ubZULqa",
         "id": "7QHrZkMzK"
+      }
+    },
+    {
+      "name": "VeryPeri",
+      "type": "color",
+      "value": "#6667AB66",
+      "category": "color",
+      "meta": {
+        "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+        "id": "J1aJBpNss"
+      }
+    },
+    {
+      "name": "VeryPeri 2",
+      "type": "color",
+      "value": "#6667AB",
+      "category": "color",
+      "meta": {
+        "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+        "id": "yfK6asVaq"
+      }
+    },
+    {
+      "name": "header",
+      "type": "color",
+      "value": "#FFFFFF",
+      "category": "color",
+      "meta": {
+        "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+        "id": "5-k7GM_Yx"
+      }
+    },
+    {
+      "name": "subheader",
+      "type": "color",
+      "value": "#DEF5EF",
+      "category": "color",
+      "meta": {
+        "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
+        "id": "laHq5-I0V"
       }
     }
   ],
