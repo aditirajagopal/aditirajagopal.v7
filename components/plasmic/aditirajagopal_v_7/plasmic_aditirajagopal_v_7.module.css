@@ -170,7 +170,7 @@
   color: #727288;
   text-align: left;
   text-transform: none;
-  line-height: 1.5;
+  line-height: normal;
   letter-spacing: normal;
   white-space: pre-wrap;
 }
@@ -180,6 +180,7 @@
 :where(.root_reset) .h1,
 h1:where(.root_reset) {
   font-size: 32px /* plasmic-token: z6thUbBJR4R */;
+  margin: 0em;
 }
 
 :where(.root_reset) h2,
@@ -187,6 +188,7 @@ h1:where(.root_reset) {
 :where(.root_reset) .h2,
 h2:where(.root_reset) {
   font-size: 24px /* plasmic-token: 2irGQlZMXSZ */;
+  margin: 0em;
 }
 
 :where(.root_reset) ol,
@@ -194,6 +196,7 @@ h2:where(.root_reset) {
 :where(.root_reset) .ol,
 ol:where(.root_reset) {
   list-style-type: decimal;
+  margin: 0em;
 }
 
 :where(.root_reset) h3,
@@ -201,6 +204,7 @@ ol:where(.root_reset) {
 :where(.root_reset) .h3,
 h3:where(.root_reset) {
   font-size: 12px /* plasmic-token: vm7bpLAKxwh */;
+  margin: 0em;
 }
 
 :where(.root_reset) ul,
@@ -208,6 +212,7 @@ h3:where(.root_reset) {
 :where(.root_reset) .ul,
 ul:where(.root_reset) {
   list-style-type: disc;
+  margin: 0em;
 }
 
 :where(.root_reset) a,
@@ -217,4 +222,32 @@ a:where(.root_reset) {
   color: #6667ab /* plasmic-token: yfK6asVaq */;
   text-decoration-line: underline;
   font-weight: 500;
+}
+
+:where(.root_reset) h4,
+:where(.root_reset) .plasmic_default__h4,
+:where(.root_reset) .h4,
+h4:where(.root_reset) {
+  margin: 0em;
+}
+
+:where(.root_reset) h5,
+:where(.root_reset) .plasmic_default__h5,
+:where(.root_reset) .h5,
+h5:where(.root_reset) {
+  margin: 0em;
+}
+
+:where(.root_reset) h6,
+:where(.root_reset) .plasmic_default__h6,
+:where(.root_reset) .h6,
+h6:where(.root_reset) {
+  margin: 0em;
+}
+
+:where(.root_reset) pre,
+:where(.root_reset) .plasmic_default__pre,
+:where(.root_reset) .pre,
+pre:where(.root_reset) {
+  margin: 0em;
 }
