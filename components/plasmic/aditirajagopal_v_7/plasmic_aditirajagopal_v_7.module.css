@@ -179,4 +179,42 @@
 :where(.root_reset) .plasmic_default__h1,
 :where(.root_reset) .h1,
 h1:where(.root_reset) {
+  font-size: 32px /* plasmic-token: z6thUbBJR4R */;
+}
+
+:where(.root_reset) h2,
+:where(.root_reset) .plasmic_default__h2,
+:where(.root_reset) .h2,
+h2:where(.root_reset) {
+  font-size: 24px /* plasmic-token: 2irGQlZMXSZ */;
+}
+
+:where(.root_reset) ol,
+:where(.root_reset) .plasmic_default__ol,
+:where(.root_reset) .ol,
+ol:where(.root_reset) {
+  list-style-type: decimal;
+}
+
+:where(.root_reset) h3,
+:where(.root_reset) .plasmic_default__h3,
+:where(.root_reset) .h3,
+h3:where(.root_reset) {
+  font-size: 12px /* plasmic-token: vm7bpLAKxwh */;
+}
+
+:where(.root_reset) ul,
+:where(.root_reset) .plasmic_default__ul,
+:where(.root_reset) .ul,
+ul:where(.root_reset) {
+  list-style-type: disc;
+}
+
+:where(.root_reset) a,
+:where(.root_reset) .plasmic_default__a,
+:where(.root_reset) .a,
+a:where(.root_reset) {
+  color: #6667ab /* plasmic-token: yfK6asVaq */;
+  text-decoration-line: underline;
+  font-weight: 500;
 }
