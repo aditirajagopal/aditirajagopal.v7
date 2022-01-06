@@ -165,6 +165,9 @@ function PlasmicThoughts__RenderFunc(props: {
               <p.PlasmicLink
                 className={classNames(projectcss.a, sty.link__r6NA)}
                 component={Link}
+                href={
+                  "https://docs.google.com/presentation/d/1Ny9aHgFQwBlinCT89NTFoAbBDlvc0e-MScjfvRk9IKs/edit#slide=id.g947f5a6932_1_98" as const
+                }
                 platform={"nextjs"}
               >
                 <div

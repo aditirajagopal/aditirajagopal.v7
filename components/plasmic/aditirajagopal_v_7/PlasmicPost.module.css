@@ -111,6 +111,8 @@
 .freeBox__reirU > :global(.__wab_flex-container) {
   flex-direction: row;
   align-content: space-between;
+  align-items: stretch;
+  justify-content: space-evenly;
   min-width: 0;
 }
 @media (max-width: 768px) {
