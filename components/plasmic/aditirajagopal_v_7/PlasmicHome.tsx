@@ -293,6 +293,7 @@ function PlasmicHome__RenderFunc(props: {
                     "https://github.com/aditirajagopal/aditirajagopal/blob/master/src/components/Aditi_Rajagopal_Portfolio.pdf" as const
                   }
                   platform={"nextjs"}
+                  target={"_blank" as const}
                 >
                   <div
                     className={classNames(
