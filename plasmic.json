@@ -151,19 +151,6 @@
           "componentType": "page"
         },
         {
-          "id": "3tKTxNK9Sn",
-          "name": "Thoughts",
-          "type": "managed",
-          "projectId": "hRsY5NbPeCQT1m4ubZULqa",
-          "renderModuleFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicThoughts.tsx",
-          "importSpec": {
-            "modulePath": "../pages/thoughts.tsx"
-          },
-          "cssFilePath": "plasmic/aditi_rajagopal_personal_website_2022/PlasmicThoughts.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "Zmr6lqTMMC",
           "name": "SocialFooter",
           "type": "managed",
