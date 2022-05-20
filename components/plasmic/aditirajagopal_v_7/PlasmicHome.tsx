@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -38,8 +39,8 @@ import { useScreenVariants as useScreenVariantstwMp01PTCp0 } from "./PlasmicGlob
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_aditirajagopal_v_7.module.css"; // plasmic-import: 5Xs5TeWC1PCRPBorm9sVyK/projectcss
-import * as sty from "./PlasmicHome.module.css"; // plasmic-import: RVqnht4VpY/css
+import projectcss from "./plasmic_aditirajagopal_v_7.module.css"; // plasmic-import: 5Xs5TeWC1PCRPBorm9sVyK/projectcss
+import sty from "./PlasmicHome.module.css"; // plasmic-import: RVqnht4VpY/css
 
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: 9ln7UQtuabq/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: 5SKpbgno6I6/icon
@@ -62,18 +63,17 @@ export type PlasmicHome__OverridesType = {
   h2?: p.Flex<"h2">;
 };
 
-export interface DefaultHomeProps {
-  dataFetches: PlasmicHome__Fetches;
-}
+export interface DefaultHomeProps {}
 
 function PlasmicHome__RenderFunc(props: {
   variants: PlasmicHome__VariantsArgs;
   args: PlasmicHome__ArgsType;
   overrides: PlasmicHome__OverridesType;
-  dataFetches?: PlasmicHome__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantstwMp01PTCp0()
@@ -102,6 +102,9 @@ function PlasmicHome__RenderFunc(props: {
           className={classNames(
             projectcss.all,
             projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
             sty.root
           )}
         >
@@ -128,6 +131,7 @@ function PlasmicHome__RenderFunc(props: {
                   data-plasmic-name={"h2"}
                   data-plasmic-override={overrides.h2}
                   className={classNames(
+                    projectcss.all,
                     projectcss.h2,
                     projectcss.__wab_text,
                     sty.h2
@@ -211,35 +215,45 @@ function PlasmicHome__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__sBaqX)}
               >
-                <p.PlasmicLink
-                  className={classNames(projectcss.a, sty.link__rCckN)}
-                  component={Link}
-                  href={"/thoughts" as const}
-                  platform={"nextjs"}
-                >
-                  <div
+                {true ? (
+                  <p.PlasmicLink
                     className={classNames(
                       projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__hEBiR
+                      projectcss.a,
+                      sty.link__rCckN
                     )}
+                    component={Link}
+                    href={"/thoughts" as const}
+                    platform={"nextjs"}
                   >
-                    {"💭"}
-                  </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__hEBiR
+                      )}
+                    >
+                      {"💭"}
+                    </div>
 
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__xWiFm
-                    )}
-                  >
-                    {"thoughts"}
-                  </div>
-                </p.PlasmicLink>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__xWiFm
+                      )}
+                    >
+                      {"thoughts"}
+                    </div>
+                  </p.PlasmicLink>
+                ) : null}
 
                 <p.PlasmicLink
-                  className={classNames(projectcss.a, sty.link__fRm)}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__fRm
+                  )}
                   component={Link}
                   href={
                     "https://docs.google.com/presentation/d/1Ny9aHgFQwBlinCT89NTFoAbBDlvc0e-MScjfvRk9IKs/edit#slide=id.g947f5a6932_1_98" as const
@@ -269,8 +283,15 @@ function PlasmicHome__RenderFunc(props: {
                 </p.PlasmicLink>
 
                 <p.PlasmicLink
-                  className={classNames(projectcss.a, sty.link__fjh7R)}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__fjh7R
+                  )}
                   component={Link}
+                  href={
+                    "https://github.com/aditirajagopal/aditirajagopal/blob/master/src/components/Aditi_Rajagopal_Portfolio.pdf" as const
+                  }
                   platform={"nextjs"}
                 >
                   <div
@@ -294,31 +315,37 @@ function PlasmicHome__RenderFunc(props: {
                   </div>
                 </p.PlasmicLink>
 
-                <p.PlasmicLink
-                  className={classNames(projectcss.a, sty.link__mYKz5)}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <div
+                {true ? (
+                  <p.PlasmicLink
                     className={classNames(
                       projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__fmiK0
+                      projectcss.a,
+                      sty.link__mYKz5
                     )}
+                    component={Link}
+                    platform={"nextjs"}
                   >
-                    {"📓"}
-                  </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__fmiK0
+                      )}
+                    >
+                      {"📓"}
+                    </div>
 
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__pQnc
-                    )}
-                  >
-                    {"learning"}
-                  </div>
-                </p.PlasmicLink>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__pQnc
+                      )}
+                    >
+                      {"learning"}
+                    </div>
+                  </p.PlasmicLink>
+                ) : null}
               </p.Stack>
             </p.Stack>
           </p.Stack>
@@ -355,7 +382,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicHome__VariantsArgs;
     args?: PlasmicHome__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicHome__Fetches;
   } & Omit<PlasmicHome__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicHome__ArgsType, ReservedPropsType> &
@@ -382,13 +408,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicHome__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicHome__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

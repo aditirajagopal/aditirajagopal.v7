@@ -268,7 +268,8 @@
       "images": [],
       "indirect": false,
       "codeComponents": [],
-      "jsBundleThemes": []
+      "jsBundleThemes": [],
+      "globalContextsFilePath": ""
     },
     {
       "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
@@ -284,7 +285,7 @@
           "projectId": "5Xs5TeWC1PCRPBorm9sVyK",
           "renderModuleFilePath": "plasmic/aditirajagopal_v_7/PlasmicThoughts.tsx",
           "importSpec": {
-            "modulePath": "../pages/thoughts.tsx"
+            "modulePath": "../pages/thought.tsx"
           },
           "cssFilePath": "plasmic/aditirajagopal_v_7/PlasmicThoughts.module.css",
           "scheme": "blackbox",
@@ -413,7 +414,8 @@
       ],
       "images": [],
       "indirect": false,
-      "codeComponents": []
+      "codeComponents": [],
+      "globalContextsFilePath": ""
     }
   ],
   "globalVariants": {
@@ -432,9 +434,10 @@
       }
     ]
   },
+  "wrapPagesWithGlobalContexts": true,
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.166",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.166/dist/plasmic.schema.json"
+  "cliVersion": "0.1.178",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.178/dist/plasmic.schema.json"
 }

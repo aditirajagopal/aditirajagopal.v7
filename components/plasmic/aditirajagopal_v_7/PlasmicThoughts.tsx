@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -40,8 +41,8 @@ import { useScreenVariants as useScreenVariantstwMp01PTCp0 } from "./PlasmicGlob
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_aditirajagopal_v_7.module.css"; // plasmic-import: 5Xs5TeWC1PCRPBorm9sVyK/projectcss
-import * as sty from "./PlasmicThoughts.module.css"; // plasmic-import: KBBASCMD9IY/css
+import projectcss from "./plasmic_aditirajagopal_v_7.module.css"; // plasmic-import: 5Xs5TeWC1PCRPBorm9sVyK/projectcss
+import sty from "./PlasmicThoughts.module.css"; // plasmic-import: KBBASCMD9IY/css
 
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: 9ln7UQtuabq/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: 5SKpbgno6I6/icon
@@ -63,18 +64,17 @@ export type PlasmicThoughts__OverridesType = {
   container?: p.Flex<"div">;
 };
 
-export interface DefaultThoughtsProps {
-  dataFetches: PlasmicThoughts__Fetches;
-}
+export interface DefaultThoughtsProps {}
 
 function PlasmicThoughts__RenderFunc(props: {
   variants: PlasmicThoughts__VariantsArgs;
   args: PlasmicThoughts__ArgsType;
   overrides: PlasmicThoughts__OverridesType;
-  dataFetches?: PlasmicThoughts__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantstwMp01PTCp0()
@@ -84,8 +84,8 @@ function PlasmicThoughts__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{"Thoughts"}</title>
-        <meta key="og:title" property="og:title" content={"Thoughts"} />
+        <title key="title">{"Thought"}</title>
+        <meta key="og:title" property="og:title" content={"Thought"} />
       </Head>
 
       <style>{`
@@ -103,45 +103,63 @@ function PlasmicThoughts__RenderFunc(props: {
           className={classNames(
             projectcss.all,
             projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
             sty.root
           )}
         >
           <p.Stack
             as={"div"}
             hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox___7JePu)}
+            className={classNames(projectcss.all, sty.freeBox__cTy63)}
           >
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link___7UOye
+              )}
+              component={Link}
+              href={
+                hasVariant(globalVariants, "screen", "tablet")
+                  ? ("/" as const)
+                  : ("/" as const)
+              }
+              platform={"nextjs"}
+            >
+              {hasVariant(globalVariants, "screen", "tablet")
+                ? "aditi rajagopal"
+                : "aditi rajagopal"}
+            </p.PlasmicLink>
+
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__zv8Zg)}
+              className={classNames(projectcss.all, sty.freeBox__j3NKc)}
             >
               <p.PlasmicLink
                 className={classNames(
+                  projectcss.all,
                   projectcss.a,
-                  projectcss.__wab_text,
-                  sty.link__yfdz7
+                  sty.link__sBt47
                 )}
                 component={Link}
-                href={"/" as const}
-                platform={"nextjs"}
-              >
-                {hasVariant(globalVariants, "screen", "tablet")
-                  ? "aditi rajagopal"
-                  : "aditi rajagopal"}
-              </p.PlasmicLink>
-
-              <p.PlasmicLink
-                className={classNames(projectcss.a, sty.link__nIZoT)}
-                component={Link}
-                href={"/thoughts" as const}
+                href={
+                  hasVariant(globalVariants, "screen", "mobile")
+                    ? ("/thoughts" as const)
+                    : hasVariant(globalVariants, "screen", "tablet")
+                    ? ("/thoughts" as const)
+                    : ("/thoughts" as const)
+                }
                 platform={"nextjs"}
               >
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text___1TL1
+                    sty.text__uhydg
                   )}
                 >
                   {hasVariant(globalVariants, "screen", "tablet") ? "💭" : "💭"}
@@ -151,7 +169,7 @@ function PlasmicThoughts__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__lSfXe
+                    sty.text__lAaf1
                   )}
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
@@ -163,18 +181,33 @@ function PlasmicThoughts__RenderFunc(props: {
               </p.PlasmicLink>
 
               <p.PlasmicLink
-                className={classNames(projectcss.a, sty.link__r6NA)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__qdplL
+                )}
                 component={Link}
                 href={
-                  "https://docs.google.com/presentation/d/1Ny9aHgFQwBlinCT89NTFoAbBDlvc0e-MScjfvRk9IKs/edit#slide=id.g947f5a6932_1_98" as const
+                  hasVariant(globalVariants, "screen", "mobile")
+                    ? ("https://docs.google.com/presentation/d/1Ny9aHgFQwBlinCT89NTFoAbBDlvc0e-MScjfvRk9IKs/edit#slide=id.g947f5a6932_1_98" as const)
+                    : hasVariant(globalVariants, "screen", "tablet")
+                    ? ("https://docs.google.com/presentation/d/1Ny9aHgFQwBlinCT89NTFoAbBDlvc0e-MScjfvRk9IKs/edit#slide=id.g947f5a6932_1_98" as const)
+                    : ("https://docs.google.com/presentation/d/1Ny9aHgFQwBlinCT89NTFoAbBDlvc0e-MScjfvRk9IKs/edit#slide=id.g947f5a6932_1_98" as const)
                 }
                 platform={"nextjs"}
+                target={
+                  hasVariant(globalVariants, "screen", "mobile")
+                    ? ("_blank" as const)
+                    : hasVariant(globalVariants, "screen", "tablet")
+                    ? ("_blank" as const)
+                    : ("_blank" as const)
+                }
               >
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__l1SBi
+                    sty.text__jkYlf
                   )}
                 >
                   {hasVariant(globalVariants, "screen", "tablet") ? "🤝" : "🤝"}
@@ -184,7 +217,7 @@ function PlasmicThoughts__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text___6QM
+                    sty.text__yAzVb
                   )}
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
@@ -194,7 +227,11 @@ function PlasmicThoughts__RenderFunc(props: {
               </p.PlasmicLink>
 
               <p.PlasmicLink
-                className={classNames(projectcss.a, sty.link___9PJBw)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__yHxdH
+                )}
                 component={Link}
                 platform={"nextjs"}
               >
@@ -202,7 +239,7 @@ function PlasmicThoughts__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__wnYxm
+                    sty.text__uPlhk
                   )}
                 >
                   {hasVariant(globalVariants, "screen", "tablet") ? "🖌" : "🖌"}
@@ -212,7 +249,7 @@ function PlasmicThoughts__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__no8G
+                    sty.text__nvrDp
                   )}
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
@@ -222,7 +259,11 @@ function PlasmicThoughts__RenderFunc(props: {
               </p.PlasmicLink>
 
               <p.PlasmicLink
-                className={classNames(projectcss.a, sty.link__nlY1F)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__aBtQu
+                )}
                 component={Link}
                 platform={"nextjs"}
               >
@@ -230,7 +271,7 @@ function PlasmicThoughts__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__rKyDj
+                    sty.text___1C2Mr
                   )}
                 >
                   {hasVariant(globalVariants, "screen", "tablet") ? "📓" : "📓"}
@@ -240,7 +281,7 @@ function PlasmicThoughts__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text___0I2Mo
+                    sty.text__k5Gg
                   )}
                 >
                   {hasVariant(globalVariants, "screen", "mobile")
@@ -499,7 +540,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicThoughts__VariantsArgs;
     args?: PlasmicThoughts__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicThoughts__Fetches;
   } & Omit<PlasmicThoughts__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicThoughts__ArgsType, ReservedPropsType> &
@@ -526,13 +566,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicThoughts__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicThoughts__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

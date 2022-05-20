@@ -16,7 +16,7 @@
 }
 .slotTargetTitle {
   font-family: "Eczar", serif;
-  font-size: 32px /* plasmic-token: z6thUbBJR4R */;
+  font-size: var(--token-z6thUbBJR4R);
   font-weight: 800;
-  color: #ffffff /* plasmic-token: 5-k7GM_Yx */;
+  color: var(--token-5-k7GM_Yx);
 }

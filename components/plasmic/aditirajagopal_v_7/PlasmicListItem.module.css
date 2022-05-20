@@ -1,14 +1,14 @@
 .root {
-  display: flex;
   flex-direction: column;
+  display: flex;
   position: relative;
   width: 100%;
   min-width: 0;
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: column;
-  align-items: flex-start;
   justify-content: space-evenly;
+  align-items: flex-start;
   min-width: 0;
   margin-top: calc(0px - 3px);
   height: calc(100% + 3px);
@@ -20,19 +20,19 @@
   margin-top: 3px;
 }
 .slotTargetTitle {
-  font-size: 24px /* plasmic-token: 2irGQlZMXSZ */;
+  font-size: var(--token-2irGQlZMXSZ);
   font-weight: 800;
-  color: #ffffff /* plasmic-token: 5-k7GM_Yx */;
+  color: var(--token-5-k7GM_Yx);
   font-family: "Eczar", serif;
 }
 .slotTargetDate {
-  font-size: 12px /* plasmic-token: vm7bpLAKxwh */;
-  color: #def5ef /* plasmic-token: laHq5-I0V */;
+  font-size: var(--token-vm7bpLAKxwh);
+  color: var(--token-laHq5-I0V);
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 600;
 }
 .slotTargetDescription {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 500;
-  color: #def5ef /* plasmic-token: laHq5-I0V */;
+  color: var(--token-laHq5-I0V);
 }

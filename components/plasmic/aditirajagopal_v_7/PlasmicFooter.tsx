@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -36,8 +37,8 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_aditirajagopal_v_7.module.css"; // plasmic-import: 5Xs5TeWC1PCRPBorm9sVyK/projectcss
-import * as sty from "./PlasmicFooter.module.css"; // plasmic-import: FoIacMt2OHV/css
+import projectcss from "./plasmic_aditirajagopal_v_7.module.css"; // plasmic-import: 5Xs5TeWC1PCRPBorm9sVyK/projectcss
+import sty from "./PlasmicFooter.module.css"; // plasmic-import: FoIacMt2OHV/css
 
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: 9ln7UQtuabq/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: 5SKpbgno6I6/icon
@@ -66,10 +67,11 @@ function PlasmicFooter__RenderFunc(props: {
   variants: PlasmicFooter__VariantsArgs;
   args: PlasmicFooter__ArgsType;
   overrides: PlasmicFooter__OverridesType;
-  dataFetches?: PlasmicFooter__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
 
   return (
     <div
@@ -77,7 +79,14 @@ function PlasmicFooter__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <div className={classNames(projectcss.all, sty.freeBox___3DiJf)}>
         <p.Stack
@@ -143,7 +152,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicFooter__VariantsArgs;
     args?: PlasmicFooter__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicFooter__Fetches;
   } & Omit<PlasmicFooter__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicFooter__ArgsType, ReservedPropsType> &
@@ -170,13 +178,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicFooter__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicFooter__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

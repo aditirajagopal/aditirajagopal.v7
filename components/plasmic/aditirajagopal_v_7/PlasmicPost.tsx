@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -39,8 +40,8 @@ import { useScreenVariants as useScreenVariantstwMp01PTCp0 } from "./PlasmicGlob
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_aditirajagopal_v_7.module.css"; // plasmic-import: 5Xs5TeWC1PCRPBorm9sVyK/projectcss
-import * as sty from "./PlasmicPost.module.css"; // plasmic-import: 5GtUtT6LtET/css
+import projectcss from "./plasmic_aditirajagopal_v_7.module.css"; // plasmic-import: 5Xs5TeWC1PCRPBorm9sVyK/projectcss
+import sty from "./PlasmicPost.module.css"; // plasmic-import: 5GtUtT6LtET/css
 
 export type PlasmicPost__VariantMembers = {};
 
@@ -63,18 +64,17 @@ export type PlasmicPost__OverridesType = {
   nextPost?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
-export interface DefaultPostProps {
-  dataFetches: PlasmicPost__Fetches;
-}
+export interface DefaultPostProps {}
 
 function PlasmicPost__RenderFunc(props: {
   variants: PlasmicPost__VariantsArgs;
   args: PlasmicPost__ArgsType;
   overrides: PlasmicPost__OverridesType;
-  dataFetches?: PlasmicPost__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantstwMp01PTCp0()
@@ -82,9 +82,7 @@ function PlasmicPost__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head>
-        <meta name="twitter:card" content="summary" />
-      </Head>
+      {}
 
       <style>{`
         body {
@@ -101,6 +99,9 @@ function PlasmicPost__RenderFunc(props: {
           className={classNames(
             projectcss.all,
             projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
             sty.root
           )}
         >
@@ -109,6 +110,20 @@ function PlasmicPost__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__csc9Y)}
           >
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__gfn2U
+              )}
+              component={Link}
+              href={"/" as const}
+              platform={"nextjs"}
+            >
+              {"aditi rajagopal"}
+            </p.PlasmicLink>
+
             <p.Stack
               as={"div"}
               hasGap={true}
@@ -116,19 +131,10 @@ function PlasmicPost__RenderFunc(props: {
             >
               <p.PlasmicLink
                 className={classNames(
+                  projectcss.all,
                   projectcss.a,
-                  projectcss.__wab_text,
-                  sty.link__gfn2U
+                  sty.link___9UM
                 )}
-                component={Link}
-                href={"/" as const}
-                platform={"nextjs"}
-              >
-                {"aditi rajagopal"}
-              </p.PlasmicLink>
-
-              <p.PlasmicLink
-                className={classNames(projectcss.a, sty.link___9UM)}
                 component={Link}
                 href={"/thoughts" as const}
                 platform={"nextjs"}
@@ -157,7 +163,11 @@ function PlasmicPost__RenderFunc(props: {
               </p.PlasmicLink>
 
               <p.PlasmicLink
-                className={classNames(projectcss.a, sty.link__kQzza)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__kQzza
+                )}
                 component={Link}
                 href={
                   "https://docs.google.com/presentation/d/1Ny9aHgFQwBlinCT89NTFoAbBDlvc0e-MScjfvRk9IKs/edit#slide=id.g947f5a6932_1_98" as const
@@ -189,7 +199,11 @@ function PlasmicPost__RenderFunc(props: {
               </p.PlasmicLink>
 
               <p.PlasmicLink
-                className={classNames(projectcss.a, sty.link__szoVr)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__szoVr
+                )}
                 component={Link}
                 platform={"nextjs"}
               >
@@ -217,7 +231,11 @@ function PlasmicPost__RenderFunc(props: {
               </p.PlasmicLink>
 
               <p.PlasmicLink
-                className={classNames(projectcss.a, sty.link___0BJrB)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link___0BJrB
+                )}
                 component={Link}
                 platform={"nextjs"}
               >
@@ -249,7 +267,7 @@ function PlasmicPost__RenderFunc(props: {
           <p.Stack
             as={"div"}
             hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__zkAqI)}
+            className={classNames(projectcss.all, sty.freeBox__tdihX)}
           >
             <PostHeader
               data-plasmic-name={"postHeader"}
@@ -290,7 +308,11 @@ function PlasmicPost__RenderFunc(props: {
               }
             />
 
-            <div className={classNames(projectcss.all, sty.freeBox__lIUx7)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__lIUx7)}
+            >
               <div
                 data-plasmic-name={"container"}
                 data-plasmic-override={overrides.container}
@@ -303,39 +325,41 @@ function PlasmicPost__RenderFunc(props: {
                   className: classNames(sty.slotTargetContents)
                 })}
               </div>
-            </div>
 
-            <div className={classNames(projectcss.all, sty.freeBox__xj3B3)} />
+              <div className={classNames(projectcss.all, sty.freeBox__xj3B3)} />
 
-            <div className={classNames(projectcss.all, sty.freeBox__yPhu6)}>
-              <p.PlasmicLink
-                data-plasmic-name={"previousPost"}
-                data-plasmic-override={overrides.previousPost}
-                className={classNames(
-                  projectcss.a,
-                  projectcss.__wab_text,
-                  sty.previousPost
-                )}
-                component={Link}
-                platform={"nextjs"}
-              >
-                {"Previous"}
-              </p.PlasmicLink>
+              <div className={classNames(projectcss.all, sty.freeBox__yPhu6)}>
+                <p.PlasmicLink
+                  data-plasmic-name={"previousPost"}
+                  data-plasmic-override={overrides.previousPost}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.previousPost
+                  )}
+                  component={Link}
+                  platform={"nextjs"}
+                >
+                  {"Previous"}
+                </p.PlasmicLink>
 
-              <p.PlasmicLink
-                data-plasmic-name={"nextPost"}
-                data-plasmic-override={overrides.nextPost}
-                className={classNames(
-                  projectcss.a,
-                  projectcss.__wab_text,
-                  sty.nextPost
-                )}
-                component={Link}
-                platform={"nextjs"}
-              >
-                {"Next"}
-              </p.PlasmicLink>
-            </div>
+                <p.PlasmicLink
+                  data-plasmic-name={"nextPost"}
+                  data-plasmic-override={overrides.nextPost}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.nextPost
+                  )}
+                  component={Link}
+                  platform={"nextjs"}
+                >
+                  {"Next"}
+                </p.PlasmicLink>
+              </div>
+            </p.Stack>
           </p.Stack>
         </div>
       </div>
@@ -372,7 +396,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicPost__VariantsArgs;
     args?: PlasmicPost__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicPost__Fetches;
   } & Omit<PlasmicPost__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicPost__ArgsType, ReservedPropsType> &
@@ -399,13 +422,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicPost__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicPost__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

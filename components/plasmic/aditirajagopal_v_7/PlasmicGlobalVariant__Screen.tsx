@@ -4,12 +4,7 @@
 /* prettier-ignore-start */
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
-export type ScreenValue =
-  | "desktop"
-  | "tablet"
-  | "mobile"
-  | "mobileOnly"
-  | "tabletOrSmaller";
+export type ScreenValue = "desktop" | "tablet" | "mobile";
 export const ScreenContext = React.createContext<ScreenValue[] | undefined>(
   "PLEASE_RENDER_INSIDE_PROVIDER" as any
 );
@@ -27,11 +22,9 @@ export function ScreenVariantProvider(props: React.PropsWithChildren) {
 }
 
 export const useScreenVariants = p.createUseScreenVariants(true, {
-  desktop: "(min-width:768px) and (max-width:1366px)",
+  desktop: "(min-width:768px) and (max-width:1440px)",
   tablet: "(max-width:768px)",
-  mobile: "(max-width:375px)",
-  mobileOnly: "(min-width:0px) and (max-width:400px)",
-  tabletOrSmaller: "(min-width:0px) and (max-width:800px)",
+  mobile: "(max-width:450px)",
 });
 
 export default ScreenContext;

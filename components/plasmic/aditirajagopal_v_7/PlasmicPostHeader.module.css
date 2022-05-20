@@ -16,18 +16,18 @@
 }
 .slotTargetBlogTitle {
   font-family: "Eczar", serif;
-  font-size: 24px /* plasmic-token: 2irGQlZMXSZ */;
+  font-size: var(--token-2irGQlZMXSZ);
   font-weight: 900;
-  color: #def5ef /* plasmic-token: laHq5-I0V */;
+  color: var(--token-laHq5-I0V);
 }
 .slotTargetPostTitle {
   font-family: "Eczar", serif;
-  font-size: 32px /* plasmic-token: z6thUbBJR4R */;
+  font-size: var(--token-z6thUbBJR4R);
   font-weight: 800;
-  color: #ffffff /* plasmic-token: 5-k7GM_Yx */;
+  color: var(--token-5-k7GM_Yx);
 }
 .slotTargetDate {
-  font-size: 12px /* plasmic-token: vm7bpLAKxwh */;
+  font-size: var(--token-vm7bpLAKxwh);
   font-family: "IBM Plex Sans", sans-serif;
-  color: #def5ef /* plasmic-token: laHq5-I0V */;
+  color: var(--token-laHq5-I0V);
 }

@@ -16,6 +16,7 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -36,8 +37,8 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_aditirajagopal_v_7.module.css"; // plasmic-import: 5Xs5TeWC1PCRPBorm9sVyK/projectcss
-import * as sty from "./PlasmicHomeHeader.module.css"; // plasmic-import: h-KwpRnKbCa/css
+import projectcss from "./plasmic_aditirajagopal_v_7.module.css"; // plasmic-import: 5Xs5TeWC1PCRPBorm9sVyK/projectcss
+import sty from "./PlasmicHomeHeader.module.css"; // plasmic-import: h-KwpRnKbCa/css
 
 export type PlasmicHomeHeader__VariantMembers = {};
 
@@ -66,10 +67,11 @@ function PlasmicHomeHeader__RenderFunc(props: {
   variants: PlasmicHomeHeader__VariantsArgs;
   args: PlasmicHomeHeader__ArgsType;
   overrides: PlasmicHomeHeader__OverridesType;
-  dataFetches?: PlasmicHomeHeader__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
 
   return (
     <div
@@ -77,12 +79,19 @@ function PlasmicHomeHeader__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(
+        projectcss.all,
+        projectcss.root_reset,
+        projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
+        projectcss.plasmic_tokens,
+        sty.root
+      )}
     >
       <p.PlasmicLink
         data-plasmic-name={"link"}
         data-plasmic-override={overrides.link}
-        className={classNames(projectcss.a, sty.link)}
+        className={classNames(projectcss.all, projectcss.a, sty.link)}
         component={Link}
         href={"/" as const}
         platform={"nextjs"}
@@ -120,7 +129,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicHomeHeader__VariantsArgs;
     args?: PlasmicHomeHeader__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicHomeHeader__Fetches;
   } & Omit<PlasmicHomeHeader__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicHomeHeader__ArgsType, ReservedPropsType> &
@@ -147,13 +155,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicHomeHeader__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicHomeHeader__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };
